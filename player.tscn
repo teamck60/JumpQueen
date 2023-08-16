@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://d18tph5qkaewd" path="res://Sprites/animation/adventurer-run-05.png" id="15_owe3c"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0d0gc"]
-radius = 30.0
+radius = 24.0
 height = 98.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6ksli"]
@@ -103,7 +103,7 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jfk7x"]
-radius = 30.0
+radius = 24.0
 height = 98.0
 
 [node name="player" type="CharacterBody2D"]
