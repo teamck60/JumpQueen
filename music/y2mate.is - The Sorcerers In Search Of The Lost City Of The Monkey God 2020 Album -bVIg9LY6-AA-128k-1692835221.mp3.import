@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dy4nqbkw8ikqv"
+path="res://.godot/imported/y2mate.is - The Sorcerers In Search Of The Lost City Of The Monkey God 2020 Album -bVIg9LY6-AA-128k-1692835221.mp3-b7c773fa13899187d51e8350ab031c42.mp3str"
+
+[deps]
+
+source_file="res://music/y2mate.is - The Sorcerers In Search Of The Lost City Of The Monkey God 2020 Album -bVIg9LY6-AA-128k-1692835221.mp3"
+dest_files=["res://.godot/imported/y2mate.is - The Sorcerers In Search Of The Lost City Of The Monkey God 2020 Album -bVIg9LY6-AA-128k-1692835221.mp3-b7c773fa13899187d51e8350ab031c42.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

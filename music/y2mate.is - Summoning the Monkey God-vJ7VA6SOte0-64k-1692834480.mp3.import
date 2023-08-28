@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3y1jha7fsmv1"
+path="res://.godot/imported/y2mate.is - Summoning the Monkey God-vJ7VA6SOte0-64k-1692834480.mp3-dba76c5c2d363add5fcc469ac23c334d.mp3str"
+
+[deps]
+
+source_file="res://music/y2mate.is - Summoning the Monkey God-vJ7VA6SOte0-64k-1692834480.mp3"
+dest_files=["res://.godot/imported/y2mate.is - Summoning the Monkey God-vJ7VA6SOte0-64k-1692834480.mp3-dba76c5c2d363add5fcc469ac23c334d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
