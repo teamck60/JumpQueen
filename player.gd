@@ -60,5 +60,12 @@ func _physics_process(delta):
 	if direction < 0:
 		$AnimatedSprite2D.flip_h = true
 
+
 	update_animation()
 	move_and_slide()
+func _on_hitbox_area_entered(area):
+	if area.is_in_group("end"):
+		get_tree().change_scene_to_file("res://end_scene.tscn")
+
+
+

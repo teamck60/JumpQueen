@@ -1,0 +1,108 @@
+[gd_scene load_steps=9 format=3 uid="uid://dvlk5vkuj7r4u"]
+
+[ext_resource type="Texture2D" uid="uid://dai2exacs8oja" path="res://Sprites/background/far-mountains.png" id="1_p1pav"]
+[ext_resource type="Script" path="res://end_scene.gd" id="1_tyd4g"]
+[ext_resource type="Texture2D" uid="uid://bbj6kg30auec2" path="res://Sprites/background/far-clouds.png" id="2_ptfg5"]
+[ext_resource type="Texture2D" uid="uid://cnd8jal4tn3ox" path="res://Sprites/background/sky.png" id="3_iwee1"]
+[ext_resource type="Texture2D" uid="uid://ivtkpuhgtnk5" path="res://Sprites/background/mountains.png" id="4_sodp0"]
+[ext_resource type="Texture2D" uid="uid://d2ct3baa21tsp" path="res://Sprites/background/near-clouds.png" id="5_rehoi"]
+[ext_resource type="FontFile" uid="uid://cbdtil0bhwy8q" path="res://OtherAssests/joystix monospace.otf" id="6_06kom"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_eamue"]
+font = ExtResource("6_06kom")
+font_size = 22
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[node name="end scene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tyd4g")
+
+[node name="Far-mountains" type="Sprite2D" parent="."]
+z_index = -5
+position = Vector2(1607, -101)
+scale = Vector2(16.5656, 11.2563)
+texture = ExtResource("1_p1pav")
+
+[node name="Far-clouds" type="Sprite2D" parent="."]
+z_index = -6
+position = Vector2(1575, 227)
+scale = Vector2(20.582, 13.4332)
+texture = ExtResource("2_ptfg5")
+
+[node name="Sky" type="Sprite2D" parent="."]
+z_index = -12
+position = Vector2(1538, -360)
+scale = Vector2(8.40866, 8.5)
+texture = ExtResource("3_iwee1")
+
+[node name="Mountains" type="Sprite2D" parent="."]
+z_index = -5
+position = Vector2(1587, 262)
+scale = Vector2(8.22578, 7.55417)
+texture = ExtResource("4_sodp0")
+
+[node name="Far-mountains2" type="Sprite2D" parent="."]
+z_index = -7
+position = Vector2(1558, -464.664)
+scale = Vector2(16.3375, 11.5)
+texture = ExtResource("1_p1pav")
+flip_h = true
+
+[node name="Near-clouds" type="Sprite2D" parent="."]
+z_index = -9
+position = Vector2(1977, -583)
+scale = Vector2(12.7778, 12.7778)
+texture = ExtResource("5_rehoi")
+flip_h = true
+
+[node name="Near-clouds2" type="Sprite2D" parent="."]
+z_index = -8
+position = Vector2(1194, -482)
+scale = Vector2(13.6111, 13.6111)
+texture = ExtResource("5_rehoi")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_left = 1206.0
+offset_top = -855.0
+offset_right = 1314.0
+offset_bottom = -754.0
+scale = Vector2(4.7106, 3.0565)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Play again" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_06kom")
+text = "Play again"
+
+[node name="quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_06kom")
+text = "Quit
+"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 1142.0
+offset_top = -1091.0
+offset_right = 1312.0
+offset_bottom = -1046.0
+scale = Vector2(6.69585, 6.46858)
+text = "YOU WIN"
+label_settings = SubResource("LabelSettings_eamue")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1562, -654)
+scale = Vector2(0.0937835, -2.21491)
+zoom = Vector2(0.45, 0.45)
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play again" to="." method="_on_play_again_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/quit" to="." method="_on_quit_pressed"]

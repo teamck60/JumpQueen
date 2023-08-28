@@ -11,19 +11,9 @@ func _process(delta):
 	pass
 
 
-func _on_start_pressed():
-	get_tree().change_scene_to_file("res://World.tscn")
-
-
 func _on_quit_pressed():
 	get_tree().quit()
 
 
-#func _on_sound_toggle_toggled(button_pressed):
-#	AudioStreamPlayer
-	
-func _load_scene():
-	if Input.is_action_pressed("ui_text_backspace"):
-		get_tree().change_scene("res://MainMenu.tscn")
-		
-		
+func _on_play_again_pressed():
+	get_tree().change_scene_to_file("res://World.tscn")

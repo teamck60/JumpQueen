@@ -126,3 +126,5 @@ autoplay = "idle"
 [node name="hitbox collision" type="CollisionShape2D" parent="Hitbox"]
 position = Vector2(0, 13)
 shape = SubResource("CapsuleShape2D_jfk7x")
+
+[connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]
